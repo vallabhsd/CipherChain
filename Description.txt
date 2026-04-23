@@ -1,0 +1,9 @@
+blockchain.py — The chain itself. Each Block stores the document hash, links to the previous block, and must be mined with proof-of-work (hash starts with 0000). The chain is saved to chain.json and reloads automatically.
+
+hasher.py — SHA-256 hashing for files and raw bytes. Uses hmac.compare_digest for timing-safe comparison (prevents side-channel attacks).
+
+metadata_cleaner.py — Auto-detects file type and strips metadata. Images use Pillow, PDFs use pypdf, text files are passed through as-is.
+
+platform.py — The glue: register(filepath) and verify(filepath). Both run the same pipeline (strip → hash → check chain) so the hashes always match.
+
+demo.py — Runs the full attack demo in under 10 seconds: register → verify original ✅ → verify tampered ❌ → show avalanche effect → print chain.
