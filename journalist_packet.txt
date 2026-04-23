@@ -1,0 +1,16 @@
+CIPHERCHAIN — JOURNALIST PACKET
+==================================================
+
+DOCUMENT PATH (ORIGINAL):
+C:\Users\valla\OneDrive - BENNETT UNIVERSITY\Desktop\CipherChain\original.txt
+
+VALID HASH (BLOCKCHAIN):
+cde6149d2fb82c44ef4f1b2e6db0e0cd193a26e9d35536e1232fd535e497371c
+
+TEST HASH (TAMPERED FILE):
+cb6b1cef548658e063304a092532b2b77db34b504b02f5eb5181a1c15e7e37ea
+
+INSTRUCTIONS:
+1. Open CipherChain UI
+2. Paste VALID HASH → should show AUTHENTIC
+3. Paste TEST HASH → should show NOT AUTHENTIC
